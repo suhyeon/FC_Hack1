@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>ShowMeTheN</title>
+</head>
+<body>
+  <div class="warp">
+    <!-- 모바일에서 컬럼들이 하나는 꽉찬너비로, 다른 하나는 절반너비로 쌓이게 합니다 -->
+    <div class="row header">
+        <div class="col-xs-2 col-md-2 menu">
+         <img src="./images/menu.png"> <span>MENU</span>
+        </div> <!-- menu -->
+        <div class="col-xs-6 col-md-8 mcont">
+            <span id="mpc"> Are you reday? Here's Your Menu ... </span>
+            <span id="mmobile"> Here's Your Menu ... </span>
+        </div> <!-- mcont-->
+        <div class="col-xs-2 col-md-2 mright">
+            <span> Show Me The N </span>
+        </div> <!--right log -->
+    </div> <!-- header end -->
+    <input type="textArea" class="location">
+    <input type="textArea" class="people">
+    <button type="btn" class="search">SEARCH</button>
+    <div class="col-xs-12 cate">
+      <ul>
+        <li class="icon1"><img src="./images/icon1.png"></li>
+        <li>신사역</li>
+        <li>압구정역</li>
+        <li>논현역</li>
+      </ul>
+    </div><!-- category end-->
+
+    <div class="col-xs-12 contents">
+      <div id="storeInfo">
+          <span id="storeName">킹콩 스테이크 </span>
+          <span id="sotreAddr">서울 강남구 논현로175길 69 </span>
+      </div>
+      <div id="map"></div>
+      <div class="storeMenu">
+          <div class="box">
+            <ul>
+              <li class="menuImg"><img src="./images/menu-bg1.png"></li>
+              <li class="menuName">메뉴1</li>
+              <li class="menuPric"> 가격 <span  class="price">50,0000</span></li>
+              <li class="menuNprice">N/1 <span  class="price"> 10,0000</span></li>
+            </ul>
+          </div>
+          <div class="box">
+              <ul>
+                <li class="menuImg"><img src="./images/menu-bg2.png"></li>
+                <li class="menuName">메뉴1</li>
+                <li class="menuPric"> 가격 <span  class="price">50,0000</span></li>
+                <li class="menuNprice">N/1 <span  class="price"> 10,0000</span></li>
+              </ul>
+          </div>
+          <div class="box">
+              <ul>
+                <li class="menuImg"><img src="./images/menu-bg1.png"></li>
+                <li class="menuName">메뉴1</li>
+                <li class="menuPric"> 가격 <span  class="price">50,0000</span></li>
+                <li class="menuNprice">N/1 <span  class="price"> 10,0000</span></li>
+              </ul>
+          </div>
+
+      </div> <!-- storeMenu end-->      
+    </div><!-- contents end-->
+
+    <div class="col-xs-12 footer">copyright by showMetheN since by @2017</div>
+  
+      
+    
+  </div><!-- warp end -->
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=9oVM7hjxKgbSqj5cKfQY"></script>
+  <script src="js/money.js">
+      /*var map = new naver.maps.Map('map', {
+          center: new naver.maps.LatLng(37.5192688, 127.0246907),
+          zoom: 20
+      });
+      
+      var marker = new naver.maps.Marker({
+          position: new naver.maps.LatLng(37.5192688, 127.0246907),
+          title: "쥬즈",
+          map: map
+      });*/
+  </script>
+</body>
+</html>

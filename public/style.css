@@ -1,0 +1,81 @@
+li { list-style: none; }
+
+.header {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #e6eaea;
+  line-height: 60px;
+}
+.menu { text-align: center; }
+.menu span { margin-left: 5px;}
+.mcont { 
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.mright { background-color: #42ab9e; color: #fff; }
+#mmobile { display: none;}
+.cate {
+  height: 60px;
+  border-bottom: 1px solid #e6eaea;
+  line-height: 60px;
+}
+.cate li {display: inline-block; width: 100px;}
+.cate li:not(.icon1) { border-left: 1px solid #e6eaea;  text-align: center; }
+.icon1 { padding-left: 8px;}
+
+.contents { width: 100%;}
+#map {  width: 80%; height: 400px; margin-left: 10%; border: 2px solid #e6eaea; }
+
+.storeMenu {width: 100%; margin-top: 50px; text-align: center; }
+
+.box {
+  display: inline-block;
+  width: 23%;
+  margin: 0px 20px 5px 20px;
+  border:1px solid #e6eaea;
+  background-color: #fff;
+  box-shadow: 10px 10px #e6eaea;
+  
+}
+.box ul { width: 100%; margin:0; padding:0;}
+.box li { width: 100%; padding: 10px 10px 10px;;}
+.menuImg { 
+  /*
+  background-image: url("./images/icon2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  */
+  height: 182px; 
+  color:#fff;
+}
+.menuName { margin-top: 30px;}
+.price { font-weight: bold;}
+
+.footer::before{
+  content: "";
+  display: block;
+  clear: both;
+}
+.footer { margin-top: 110px; height: 100px; border-top: 1px solid #e6eaea; line-height: 100px; text-align: center; }
+
+/* 모바일  */
+@media screen and (min-width:320px) and (max-width:767px){
+  .mright, .menu span, .cate{ display: none; }
+  .mcont { font-size: 14px;}
+  #mpc { display: none;}
+  #mmobile { display: inline-block;}
+  #map { height: 200px;}
+  .box { display: block; width: 90%; margin-top: 25px;}
+}
+
+#storeInfo { height: 130px; line-height: 100px; text-align: center; }
+#storeName { font-weight: bold; font-size: 16px; padding-right: 10px; }
+/* 테블릿  */
+@media screen and (min-width:768px) and (max-width:1199px){
+}
+
+/* 데스크 탑  */
+@media screen and  (min-width:1200px){
+  
+}

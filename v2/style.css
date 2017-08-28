@@ -1,0 +1,88 @@
+li { list-style: none; }
+
+.header {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #e6eaea;
+  line-height: 60px;
+}
+.menu { text-align: center; }
+.menu span { margin-left: 5px;}
+.mcont { 
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.mright { background-color: #42ab9e; color: #fff; }
+#mmobile, #mobile_cate { display: none;}
+.cate {
+  height: 60px;
+  border-bottom: 1px solid #e6eaea;
+  line-height: 60px;
+}
+.cate li {display: inline-block;}
+.cate li:not(.icon1) {width: 70%;   text-align: left; }
+.icon1 { padding: 0px 10px 0px 10px;}
+.cate input {display: inline-block;}
+.contents { width: 100%;}
+#map { margin-top: 50px; width: 80%; height: 500px; margin-left: 10%; border: 2px solid #e6eaea; }
+
+.storeBox {width: 100%;  text-align: center;}
+.storeInfo { margin: 50px 0px 20px 0px;}
+#storeName { font-weight: bold; font-size: 1.2em;}
+.price { margin-top: 30px;}
+.price span { width: 500px; border: 1px solid #42ab9e; padding: 20px 20px 20px 20px; font-weight: bold;}
+
+.storeMenu {margin-top: 60px; width: 100%; text-align: center; }
+.box {
+  display: inline-block;
+  width: 23%;
+  margin: 0px 20px 5px 20px;
+  border:1px solid #e6eaea;
+  background-color: #fff;
+  box-shadow: 10px 10px #e6eaea;
+  
+}
+.box ul { width: 100%; margin:0; padding:0;}
+.box li { width: 100%; padding: 10px 10px 10px;}
+.menuImg img { 
+  /*
+  background-image: url("./images/icon2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  */
+  width: 100%;
+}
+.menuName { margin-top: 30px; font-weight: bold; }
+
+
+.footer::before{
+  content: "";
+  display: block;
+  clear: both;
+}
+.footer { margin-top: 110px; height: 100px; border-top: 1px solid #e6eaea; line-height: 100px; text-align: center; }
+
+/* 모바일  */
+@media screen and (min-width:320px) and (max-width:767px){
+  .mright, .menu span{ display: none; }
+  .mcont { font-size: 14px;}
+  #mpc, #pc_cate { display: none;}
+  #mmobile { display: inline-block;}
+  #map { height: 200px;}
+  .box { display: block; width: 90%; margin-top: 25px;}
+  #mobile_cate { display: block;}
+  #mobile_cate li { width: 100%;}
+  .price { font-weight: normal; font-size: 11px;}
+
+}
+
+
+/* 테블릿  */
+@media screen and (min-width:768px) and (max-width:1199px){
+}
+
+/* 데스크 탑  */
+@media screen and  (min-width:1200px){
+  
+}
